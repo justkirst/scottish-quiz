@@ -1,0 +1,33 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+    color: #D9042B;
+}
+
+:root {
+    --hue-neutral: 188;
+    --hue-wrong: 163;
+    --hue-correct: 0;
+  }
+
+body {
+    --hue: var(--hue-neutral);
+    padding: 0;
+    margin: 0;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(var(--hue), 97%, 13%);
+}
+
+body.correct {
+    --hue: var(--hue-correct);
+  }
+  
+  body.wrong {
+    --hue: var(--hue-wrong);
+  }
+
+  
