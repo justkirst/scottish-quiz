@@ -11,7 +11,7 @@ const slangQuestions = [
 	},
 
     {
-		question: "What does Skinny Malinky Longlegs! mean ?",
+		question: "What does Skinny Malinky Longlegs! mean?",
 		answers: {
 			a: 'You need to eat as you are to thin',
 			b: 'You are short and skinny',
