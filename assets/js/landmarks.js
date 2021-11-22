@@ -1,17 +1,18 @@
 const landmarkQuestions = [
 	{
 		question: "Who is this comic book character that is located in Dundee?",
-		answers: [
-            { text: 'Dennis the Menace', correct: false },
-			{ text: 'Desperate Dan', correct: true },
-		 	{ text: 'Ivy the Terrible', correct: false },
-            { text: 'Calamity James', correct: false },
+        answers: {
+			a: 'Dennis the Menace',
+			b: 'Desperate Dan',
+			c: 'Ivy the Terrible',
+            d: 'Calamity James'
+		},
+        correctAnswer: 'b'
                 img.src = '/assets/images/desperate-dan.jpeg'
-        ]
         },
 	{
 		question: "What is this landmark?",
-		answers: [
+		answers: {
 			a: 'Loch Ness',
 			b: 'Staffa',
 			c: 'Beinn Eighe'
@@ -19,7 +20,7 @@ const landmarkQuestions = [
 		},
 		correctAnswer: 'd'
         img: '/images/falkirk-wheel.jpeg'
-	}
+	},
     {
         question: "Who is this cute little doggie called?"
         answers: {
@@ -30,7 +31,7 @@ const landmarkQuestions = [
         },
         correctAnswer: 'a'
         img: '/images/greyfriars-bobby.jpeg'
-    }
+    },
     {
         question: "This train was made famous in Harry Potter, but, what is its real name?"
         answers: {
@@ -41,7 +42,7 @@ const landmarkQuestions = [
         },
         correctAnswer: 'c'
         img: '/images/glennfinnan-viaduct.jpeg'
-    }
+    },
     {
         question: "What castle is this?"
         answers: {
@@ -52,7 +53,7 @@ const landmarkQuestions = [
         },
         correctAnswer: 'b'
         img: '/images/edinburgh-castle.jpeg'
-    }
+    },
     {
         question: "What's the name of this horse statue?"
         answers: {
@@ -63,7 +64,7 @@ const landmarkQuestions = [
         },
         correctAnswer: 'c'
         img: '/images/kelpies.jpeg'
-    }
+    },
 
 ];
 
