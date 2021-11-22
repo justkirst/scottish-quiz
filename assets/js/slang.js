@@ -1,122 +1,135 @@
+const nextButton = document.getElementById('next-btn');
+const tag = document.getElementById('tag');
+const questionContainerElement = document.getElementById('question-container');
+const questionElement = document.getElementById('question');
+const answerButtonsElement = document.getElementById('answer-buttons');
+
+
+let shuffledQuestions, currentQuestionIndex;
+
+nextButton.addEventListener('click', () => {
+    currentQuestionIndex++;
+    setNextQuestion();
+});
+
+function startGame() {
+    tag.classList.add('hide');
+    shuffledQuestions = questions.sort(() => Math.random() - .5);
+    currentQuestionIndex = 0;
+    questionContainerElement.classList.remove('hide');
+    setNextQuestion();
+}
+
+function setNextQuestion() {
+    resetState();
+    showQuestion(shuffledQuestions[currentQuestionIndex]);
+}
+
+function showQuestion(question) {
+    questionElement.innerText = question.question;
+    question.answers.forEach(answer => {
+        const button = document.createElement('button');
+        button.innerText = answer.text;
+        button.classList.add('btn');
+        if (answer.correct) {
+            button.dataset.correct = answer.correct;
+        }
+        button.addEventListener('click', selectAnswer);
+        answerButtonsElement.appendChild(button);
+    });
+}
+
+function resetState() {
+    nextButton.classList.add('hide');
+    while (answerButtonsElement.firstChild) {
+        answerButtonsElement.removeChild(answerButtonsElement.firstChild);
+    }
+}
+
+function selectAnswer(e) {
+    const selectedButton = e.target;
+    const correct = selectedButton.dataset.correct;
+    Array.from(answerButtonsElement.children).forEach(button => {
+        setStatusClass(button, button.dataset.correct);
+    });
+    
+}
+
+function setStatusClass(element, correct) {
+    clearStatusClass(element);
+    if (correct) {
+        element.classList.add('correct');
+    } else {
+        element.classList.add('wrong');
+    }
+}
+
+function clearStatusClass(element) {
+    element.classList.remove('correct');
+    element.classList.remove('wrong');
+}
+
+// Questions for quiz //
+
 const slangQuestions = [
 	{
-		question: "What does Whit’s fur ye’ll no go by ye! mean?",
-		answers: {
-			a: 'What is meant to be will be',
-			b: 'You will go far',
-			c: 'You will not go far when you are out',
-            d: 'What is meant to happen will happen'
-		},
-		correctAnswer: 'd'
-	},
+        question: "What does Whit’s fur ye’ll no go by ye! mean?",
+        answers: [
+            {text: 'What is meant to be will be', correct: false},
+            {text: 'You will go far', correct: false},
+            {text: 'You will not go far when you are out', correct: false},
+            {text: 'What is meant to happen will happen', correct: true}
+        ]
+    },
+
 
     {
 		question: "What does Skinny Malinky Longlegs! mean?",
-		answers: {
-			a: 'You need to eat as you are to thin',
-			b: 'You are short and skinny',
-			c: 'A tall thin person',
-            d: 'You have long thin legs'
-		},
-		correctAnswer: 'c'
+		answers: [
+			{text: 'You need to eat as you are to thin', correct: false},
+			{text: 'You are short and skinny', correct: false},
+			{text: 'A tall thin person', correct: true},
+            {text: 'You have long thin legs', correct: false},
+		]
 	},
 
     {
 		question: "What does Dinnae teach yer Granny tae suck eggs! mean?",
-		answers: {
-			a: 'I will teach you how to cook eggs correctly',
-			b: 'Do not try to teach someone something they already know',
-			c: 'Your Grandmother cooks the best eggs',
-            d: 'You need to teach your Gran to eat eggs properly'
-		},
-		correctAnswer: 'b'
+		answers: [
+			{text: 'I will teach you how to cook eggs', correct: false},
+			{text: 'Do not try to teach someone something they already know', correct: true},
+			{text: 'Your Grandmother cooks the best eggs', correct: false},
+            {text: 'You need to teach your Gran to eat eggs properly', correct: false},
+		]
 	},
 
     {
 		question: "What does Haud yer wheesht! mean?",
-		answers: {
-			a: 'Be quiet',
-			b: 'Be loud',
-			c: 'Hold your stomach and shout loudly',
-            d: 'Hold your head up high'
-		},
-		correctAnswer: 'a'
+		answers: [
+			{text: 'Be quiet!', correct: true},
+			{text: 'Be loud', correct: false},
+			{text: 'Hold your stomach and shout loudly', correct: false},
+            {text: 'Hold your head up high', correct: false},
+		]
 	},
 
     {
 		question: "What does Gie it laldy mean?",
-		answers: {
-			a: 'He or she is running fast are they not',
-			b: 'You keep dancing like nobody is watching you',
-			c: 'That is my boy',
-            d: 'Do something with gusto'
-		},
-		correctAnswer: 'd'
+		answers: [
+			{text: 'That person is running very fast', correct: false},
+			{text: 'You keep dancing like nobody is watching you', correct: false},
+			{text: 'That is my boy', correct: false},
+            {text: 'Do something with gusto', correct: true},
+		]
 	},
 
     {
 		question: "What does It’s a dreich day! mean?",
-		answers: {
-			a: 'It is a cold and miserable day',
-			b: 'It is going to be the hottest day today',
-			c: 'It is very icy today',
-            d: 'It is a very sunny day'
-		},
-		correctAnswer: 'a'
+		answers: [
+			{text: 'It is a cold and miserable day', correct: true},
+			{text: 'It is going to be the hottest day today', correct: false},
+			{text: 'It is very icy today', correct: false},
+            {text: 'It is a very sunny day', correct: false},
+		]
 	},
-
 ];
-
-var quizContainer = document.getElementById('quiz');
-var resultContainer = document.getElementById('results');
-var submitQuizButton = document.getElementById('submit');
-
-generateQuiz(slangQuestions, quizContainer, resultContainer, submitQuizButton);
-
-function generateQuiz(quizContainer, resultContainer, submitQuizButton) {
-
-function showQuestions (questions, quizContainer) {
-    var output = [];
-    var answers;
-
-    for(var i=0; i<questions.length; i++){
-        answers = [];
-    
-        for(letter in questions[i].answers){
-            if (questions.hasOwnProperty(i)){
-                answers.push(
-                    '<input type="radio" id="'+ questions[i].answers[letter] +'" name="question'+i+'" value="'+letter+'">' + '<label  for="'+ questions[i].answers[letter] +'">'+ questions[i].answers[letter] +'</label>'
-                );
-        }
-}
-
-output.push(
-    '<div class="question">' + questions[i].question + '</div>'
-    + '<div class="answers">' + answers.join('') + '</div>'
-);
-}
-quizContainer.innerHTML = output.join('');
-}
-
-showQuestions(questions, quizContainer);
-
-function showResults(results, quizContainer) {
-    var answerContainers = quizContainer.querySelectorAll('.answers');
-    var userAnswer = '';
-    var numberCorrect = 0;
-
-    for(var i=0; i<questions.length; i++){
-        userAnswer = (answerContainers[i].querySelector('input[name=question'+i+']:checked')||{}).value;
-        if(userAnswer===questions[i].correctAnswer){
-            numberCorrect++;
-            answerContainers[i].style.color = rgb(242,5,5);
-        } else{
-                answerContainers[i].style.color = rgb(2,89,57);
-        }
-    }        
-    resultContainer.innerHTML = numberCorrect + ' out of ' + questions.length;
-}
-
-submitButton.onclick = function(){
-	showResults(questions, quizContainer, resultContainer);
-}
