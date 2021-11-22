@@ -24,7 +24,7 @@ body {
     left: 0;
     right: 0;
     margin: 0 auto;
-    font-size: 3em;
+    font-size: 2em;
 }
 
 #question {
@@ -63,14 +63,6 @@ body {
     border: 4px solid #2B7B8C;
     border-radius: 0.5rem;
 }
-
-.btn.correct {
-   background-color: #F20505;
-  }
-  
-  .btn.wrong {
-   background-color: #025939;
-  }
 
 .next-btn {
     font-size: 1.5rem;
