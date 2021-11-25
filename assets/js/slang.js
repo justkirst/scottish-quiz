@@ -1,13 +1,13 @@
 // Questions for quiz //
 
-const questions = [
+const slangQuestions = [
 	{
         question: "What does Whit’s fur ye’ll no go by ye! mean?",
         answers: [
             {text: 'What is meant to be will be', correct: false},
             {text: 'You will go far', correct: false},
             {text: 'You will not go far when you are out', correct: false},
-            {text: 'What is meant to happen will happen', correct: true}
+            {text: 'What is meant to happen will happen', correct: true},
         ]
     },
 

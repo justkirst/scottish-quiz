@@ -1,68 +1,62 @@
 const mediaQuestions = [
 	{
 		question: "Which Scottish Acotr played James Bond?",
-		answers: {
-			a: 'Roger Moore',
-			b: 'Daniel Craig',
-			c: 'Sean Connery',
-            d: 'Pierce Brosnan'
-		},
-		correctAnswer: 'c'
+		answers: [
+			{text: 'Roger Moore', correct: false},
+			{text: 'Daniel Craig', correct: false},
+			{text: 'Sean Connery', correct: true},
+            {text: 'Pierce Brosnan', correct: false},
+		],
 	},
 
     {
 		question: "Which famous British chef was born in Johnstone, Scotland?",
-		answers: {
-			a: 'Gordon Ramsey',
-			b: 'Jamie Oliver',
-			c: 'Rick Stein',
-            d: 'Heston Blumenthal'
-		},
-		correctAnswer: 'a'
+		answers: [
+			{text: 'Gordon Ramsey', correct: true},
+			{text: 'Jamie Oliver', correct: false},
+			{text: 'Rick Stein', correct: false},
+            {text: 'Heston Blumenthal', correct: false},
+		],
 	},
 
     {
 		question: "Which Scottish group wrote Flower of Scotland?",
-		answers: {
-			a: 'The Proclaimers',
-			b: 'The Corries',
-			c: 'Runrig',
-            d: 'The Vaselines'
-		},
-		correctAnswer: 'b'
+		answers: [
+			{text: 'The Proclaimers', correct: false},
+			{text: 'The Corries', correct: true},
+			{text: 'Runrig', correct: false},
+            {text: 'The Vaselines', correct: false},
+		],
 	},
 
     {
 		question: "Which Outlander star is the only one to speak Gaelic?",
-		answers: {
-			a: 'Duncan Lacroix - Murtagh',
-			b: 'Graham McTavish - Dougal',
-			c: 'Sam Heughan - Jamie',
-            d: 'Caitriona Balfe - Claire'
-		},
-		correctAnswer: 'd'
+		answers: [
+			{text: 'Duncan Lacroix - Murtagh', correct: false},
+			{text: 'Graham McTavish - Dougal', correct: false},
+			{text: 'Sam Heughan - Jamie', correct: false}
+           {text: 'Caitriona Balfe - Claire', correct: true},
+		],
 	},
 
     {
 		question: "What is the name of real-life Hogwarts Express?",
-		answers: {
-			a: 'West Highland Line',
-			b: 'Glenfinnan Viaduct',
-			c: 'Cairngorm Mountain Railway',
-            d: 'The Far North Line'
-		},
-		correctAnswer: 'b'
+		answers: [
+			{text: 'West Highland Line', correct: false},
+			{text: 'Glenfinnan Viaduct', correct: true},
+			{text: 'Cairngorm Mountain Railway', correct: false},
+            {text: 'The Far North Line', correct: false},
+		],
 	},
 
     {
 		question: "On which Scottish Island did George Orwell write 1984?",
-		answers: {
-			a: 'Isle of Skye',
-			b: 'Shetland',
-			c: 'Isle of Jura',
-            d: 'Arran'
-		},
-		correctAnswer: 'c'
+		answers: [
+			{text: 'Isle of Skye', correct: false},
+			{text: 'Shetland', correct: false},
+			{text: 'Isle of Jura', correct: true},
+            {text: 'Arran', correct: false},
+		],
 	},
 
 ];

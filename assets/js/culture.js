@@ -1,68 +1,62 @@
 const cultureQuestions = [
 	{
 		question: "What is the national annimal of Scotland?",
-		answers: {
-			a: 'Unicorn',
-			b: 'Seahorse',
-			c: 'Eagle',
-            d: 'Rabbit'
-		},
-		correctAnswer: 'a'
+		answers: [
+			{text: 'Unicorn', correct: true},
+			{text: 'Seahorse', correct: false},
+			{text: 'Eagle', correct: false},
+            {text: 'Rabbit', correct: false},
+		],
 	},
 
     {
 		question: "What is the most popular soft drink in Scotland?",
-		answers: {
-			a: 'Cream Soda',
-			b: 'Coca Cola',
-			c: 'Red Bull',
-            d: 'Irn Bru'
-		},
-		correctAnswer: 'd'
+		answers: [
+			{text: 'Cream Soda', correct: false},
+			{text: 'Coca Cola', correct: false},
+			{text: 'Red Bull', correct: false},
+            {text: 'Irn Bru', correct: true},
+		],
 	},
 
     {
 		question: "What is the name of the famous Scottish pattern?",
-		answers: {
-			a: 'Plaid',
-			b: 'Tartan',
-			c: 'Gingham',
-            d: 'Madras'
-		},
-		correctAnswer: 'b'
+		answers: [
+			{text: 'Plaid', correct: false},
+			{text: 'Tartan', correct: true},
+			{text: 'Gingham', correct: false},
+            {text: 'Madras', correct: false},
+		],
 	},
 
     {
 		question: "What is haggis made of?",
-		answers: {
-			a: 'pork and oatmeal',
-			b: 'Potatoes and mince',
-			c: 'Sheep offal',
-            d: 'Cow brains'
-		},
-		correctAnswer: 'c'
+		answers: [
+			{text: 'pork and oatmeal', correct: false},
+			{text: 'Potatoes and mince', correct: false},
+			{text: 'Sheep offal', correct: true},
+            {text: 'Cow brains', correct: false},
+		],
 	},
 
     {
 		question: "What 3 languages are recognised officially in Scotland?",
-		answers: {
-			a: 'English, Polish and Gaelic',
-			b: 'English, Gaelic and Scots',
-			c: 'Scots, Gaelic and French',
-            d: 'Polish, French and Scots'
-		},
-		correctAnswer: 'b'
+		answers: [
+			{text: 'English, Polish and Gaelic', correct: false},
+			{text: 'English, Gaelic and Scots', correct: true},
+			{text: 'Scots, Gaelic and French', correct: false},
+            {text: 'Polish, French and Scots', correct: false},
+		],
 	},
 
     {
 		question: "What is the nickname of the Loch Ness Monster?",
-		answers: {
-			a: 'Lochie',
-			b: 'Bonnie Lady',
-			c: 'Nessie',
-            d: 'Monster Chops'
-		},
-		correctAnswer: 'c'
+		answers: [
+			{text: 'Lochie', correct: false},
+			{text: 'Bonnie Lady', correct: false},
+			{text: 'Nessie', correct: true},
+            {text: 'Monster Chops', correct: false},
+		],
 	},
 
 ];
