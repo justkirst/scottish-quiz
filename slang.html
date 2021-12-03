@@ -21,17 +21,26 @@
       </button>
 
     <div class="container">
-        <div id="question-container" class="hide">
+      <div class="score">
+        <span id="user-score">0</span>
+    <span> / </span>
+        <span id="total-score">0</span>
+    </div>
+        <div class="question-area" id="question-container">
           <div id="question">Question</div>
-          <div id="answer-buttons" class="btn-grid">
+          <div class="options">
             <button class="btn">Answer 1</button>
             <button class="btn">Answer 2</button>
             <button class="btn">Answer 3</button>
             <button class="btn">Answer 4</button>
+        
           </div>
         </div>
         <div class="controls">
+          <button class="btn btn-restart" id="restart">Restart</button>
+          <button class="btn btn-prev" id="prev">Prev</button>
           <button id="next-btn" class="next-btn btn hide">Next question</button>
+          <button class="btn btn-submit" id="submit">Submit</button>
         </div>
       </div>
 
@@ -39,6 +48,5 @@
       <footer>#</footer>
             -->
     <script src="assets/js/slang.js"></script>
-    <script src="assets/js/quiz.js"></script>
 </body>
 </html>
