@@ -4,7 +4,7 @@ const nextBtn = document.getElementById("next");
 const submitBtn = document.getElementById("submit");
 const userScore = document.getElementById("user-score");
 const totalScore = document.getElementById("total-score");
-const question = document.getElementById("question")
+const questionText = document.getElementById("question-text")
 
 let currentQuestion = 0;
 let score = 0;
@@ -80,7 +80,7 @@ submitBtn.addEventListener("click",submit);
 function beginQuiz() {
     currentQuestion = 0;
     totalScore.innerHTML = questions.length;
-    question.innerHTML = questions[currentQuestion].question;
+    questionText.innerHTML = questions[currentQuestion].question;
     trueBtn.innerHTML = questions[currentQuestion].answers[0].option;
     trueBtn.onclick = () => {
         if(questions[currentQuestion].answers[0].answer) {
@@ -130,7 +130,7 @@ function beginQuiz() {
         nextBtn.classList.add("hide");
         prevBtn.classList.remove("hide");
     }
-    question.innerHTML = questions[currentQuestion].question;
+    questionText.innerHTML = questions[currentQuestion].question;
     trueBtn.innerHTML = questions[currentQuestion].answers[0].option;
     trueBtn.onclick = () => {
         if(questions[currentQuestion].answers[0].answer) {
@@ -202,5 +202,5 @@ function beginQuiz() {
     submitBtn.classList.add("hide");
     trueBtn.classList.add("hide");
     falseBtn.classList.add("hide");   
-    question.innerHTML ="Congratulations on submitting the Quiz!"
+    questionText.innerHTML ="Congratulations on submitting the Quiz!"
  }
