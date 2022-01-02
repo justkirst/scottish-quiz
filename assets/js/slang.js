@@ -81,8 +81,8 @@ function beginQuiz() {
     currentQuestion = 0;
     totalScore.innerHTML = questions.length;
     questionText.innerHTML = questions[currentQuestion].question;
-    trueBtn.innerHTML = questions[currentQuestion].answers[0].option;
-    trueBtn.onclick = () => {
+    btn.innerHTML = questions[currentQuestion].answers[0].option;
+    btn.onclick = () => {
         if(questions[currentQuestion].answers[0].answer) {
             if(score < 3) {
                 score++;
