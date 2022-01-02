@@ -20,20 +20,28 @@
         <a href="index.html" aria-label="Back to the homepage">Go back to the homepage</a>
       </button>
 
-    <div class="container">
-        <div id="question-container" class="hide">
-          <div id="question">Question</div>
-          <div id="answer-buttons" class="btn-grid">
-            <button class="btn">Answer 1</button>
-            <button class="btn">Answer 2</button>
-            <button class="btn">Answer 3</button>
-            <button class="btn">Answer 4</button>
-          </div>
+      <div class="container">
+        <div class="score">
+            <span id="user-score">0</span>
+        <span> / </span>
+            <span id="total-score">0</span>
+        </div>
+        <div class="content" id="question-area">
+            <div id="question-text"></div>  
+            <div class="options">
+                    <button class="btn">Answer 1</button>
+                    <button class="btn">Answer 2</button>
+                    <button class="btn">Answer 3</button>
+                    <button class="btn">Answer 4</button>
+            </div>
         </div>
         <div class="controls">
-          <button id="next-btn" class="next-btn btn hide">Go to next question</button>
+            <button class="btn btn-restart" id="restart">Restart</button>
+            <button class="btn btn-prev" id="prev">Prev</button>
+            <button class="btn btn-next" id="next">Next</button>
+            <button class="btn btn-submit" id="submit">Submit</button>
         </div>
-      </div>
+    </div>
 
         <!--
       <footer>#</footer>

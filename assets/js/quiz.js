@@ -1,8 +1,10 @@
-const nextButton = document.getElementById('next-btn');
-const questionContainerElement = document.getElementById('question-container');
-const questionElement = document.getElementById('question');
-const answerButtonsElement = document.getElementById('answer-buttons');
-const answerButtons = document.getElementById('answer');
+const restartBtn = document.getElementById("restart");
+const prevBtn = document.getElementById("prev");
+const nextBtn = document.getElementById("next");
+const submitBtn = document.getElementById("submit");
+const userScore = document.getElementById("user-score");
+const totalScore = document.getElementById("total-score");
+const questionText = document.getElementById("question-text")
 
 
 let shuffledQuestions, currentQuestionIndex;

@@ -18,6 +18,13 @@ body {
     align-items: center;
 }
 
+footer {
+  clear: both;
+  position: relative;
+  height: 200px;
+  margin-top: -200px;
+}
+
 .page-heading {
     height: 6.25rem;
     width: 25rem; 
