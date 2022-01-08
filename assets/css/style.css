@@ -26,6 +26,10 @@ footer {
   height: 2.5rem;
 }
 
+#question-image {
+  width: 100%;
+}
+
 .page-heading {
     height: 6.25rem;
     width: 25rem; 
