@@ -100,11 +100,11 @@ footer {
   }
 
 .btn.correct {
-  background-color: red;
+  background-color: #1a6d62;
 }
 
 .btn.wrong {
-  background-color: green;
+  background-color: #D9042B;
 }
 
 .start-btn, .next-btn {
