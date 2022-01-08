@@ -29,7 +29,7 @@ function setNextQuestion() {
 
 function showQuestion(question) {
   questionElement.innerText = question.question
-  
+  question.img ? questionImage.src = question.img : questionImage.src = 'images/not-found.jpeg'
   question.answers.forEach(answer => {
     const button = document.createElement('button')
     button.innerText = answer.text
