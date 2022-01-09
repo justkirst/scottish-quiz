@@ -104,7 +104,7 @@ footer {
 
 .btn-grid-home {
   display: grid;
-  grid-template-columns: fit-content(max-con) 2fr;
+  grid-template-columns: fit-content(max-content) 2fr;
   gap: 1rem;
   margin: 1.5rem 0;
   justify-content: center;
@@ -203,11 +203,6 @@ footer {
   Height: auto;
   }
 }  
-
-@media only screen and (orientation: landscape) {
-  width: inherit;
-}
-}
 
 @media only screen and (max-width: 600px) {
   .page-heading {
