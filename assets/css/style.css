@@ -75,11 +75,15 @@ footer {
 }
 
 .btn-home {
+  font-size:large;
+  font-weight: bold;
   background-color: #02734A;
   border: 1px solid #733729;
-  border-radius: 5px;
-  padding: 5px 0.6rem;
-  outline: none;
+  border-radius: 0.4rem;
+  padding: 0.6rem;
+  margin: 0.1rem;
+  cursor: pointer;
+  justify-content: center;
 }
 
 .btn-grid {
@@ -157,12 +161,21 @@ footer {
 
 @media only screen and (max-width: 795px) {
   .container {
-    height: 90%;
-    width: 60%;
+    height: 65%;
+    width: 55%;
   }
   .btn-grid {
-  grid-template-columns: 2fr 2fr;
+  grid-template-columns: 1fr;
   margin: 5%;
+  }
+
+  .btn {
+    font-size: medium;
+    font-weight: bold;
+    background-color: #02734A;
+    border: 1px solid #733729;
+    border-radius: 0.4rem;
+    width: max-content;
   }
   
   .page-heading {
@@ -181,14 +194,16 @@ footer {
 }
 
 #question-image {
-  position: sticky;
+  position: relative;
+  max-width: 80%;
+  height: 11em;
 }
   
   Footer {
   Height: auto;
   }
 }  
-/*
+
 @media only screen and (orientation: landscape) {
   width: inherit;
 }
@@ -219,6 +234,23 @@ footer {
 }
 
 @media only screen and (max-width: 450px) {
+
+  .page-heading {
+    width: auto;
+    left: 5%;
+    font-size: 1.5em;
+    text-align: center;
+  }
+
+  .container {
+   position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width:fit-content;
+    border-radius: 5px;
+  }
+
 #question {
   font-size: 1.3rem;
 }
@@ -231,5 +263,10 @@ footer {
   margin: 30% 60% 50% 90%;
 }
 
+.btn-grid-landmark, .btn-grid {
+  display: block;
+  gap: 1rem;
+  margin: 1.5rem 0;
+  justify-content: center;
 }
-*/
+}
