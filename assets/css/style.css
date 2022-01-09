@@ -27,11 +27,10 @@ footer {
 }
 
 #question-image {
-  background: center center;
-  width: 10em;
+  position: relative;
+  left: 17%;
   height: 10em;
-  object-fit: contain;
-  justify-content: center;
+  align-content: center;
 }
 
 .page-heading {
