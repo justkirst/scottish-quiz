@@ -28,7 +28,7 @@ function setNextQuestion() {
 }
 
 function showQuestion(question) {
-
+  questionElement.innerText = question.question;
   question.img ? questionImage.src = question.img : questionImage.src = 'assets/images/not-found.jpeg';
   question.answers.forEach(answer => {
     const button = document.createElement('button');
