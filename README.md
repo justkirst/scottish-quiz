@@ -19,15 +19,15 @@ The Scottish Quiz game is a fun way for people to test their knowledge on fun Sc
 - CSS to create the design aspects of the quiz
 - JavaScript for the interactivity of the quiz and for the improved user experience of the quiz.
 
-### Screenshots
+## Screenshots
 
-### Testing
+## Testing
 
-## Manual Testing
+### Manual Testing
 
 During the build of the repository, I manually checked the website throughout on my large desktop computer, laptop and mobile phone to make sure the look and feel of the website was correct. I also used Chrome Dev Tools to see how the website would look on different sizes also.
 
-## Post Deployment Testing
+### Post Deployment Testing
 
 After developing the website, I used validation tools to highlight any performance issues.
 
