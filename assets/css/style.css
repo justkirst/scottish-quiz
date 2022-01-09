@@ -227,5 +227,9 @@ footer {
   height: 5em;
 }
 
+.start-btn, .next-btn {
+  margin: 30% 60% 50% 90%;
+}
+
 }
 
