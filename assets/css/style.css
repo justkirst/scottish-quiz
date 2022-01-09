@@ -75,7 +75,7 @@ footer {
 }
 
 .btn-home {
-  font-size:large;
+  font-size: 1.2em;
   font-weight: bold;
   background-color: #02734A;
   border: 1px solid #733729;
@@ -83,7 +83,7 @@ footer {
   padding: 0.6rem;
   margin: 0.1rem;
   cursor: pointer;
-  justify-content: center;
+  text-align: center;
 }
 
 .btn-grid {
