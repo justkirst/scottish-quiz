@@ -155,9 +155,10 @@ footer {
 
 /* For responsiveness on different devices */
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 795px) {
   .container {
-      height: 90%;
+    height: 90%;
+    width: 60%;
   }
   .btn-grid {
   grid-template-columns: 2fr 2fr;
@@ -175,9 +176,13 @@ footer {
       margin-left: -80%;
   }
 
-  .start-btn {
-    margin: 20vw 7vw 15vw 50%;
-  }
+  .start-btn, .next-btn {
+    margin: 30% 60% 50% 90%;
+}
+
+#question-image {
+  position: sticky;
+}
   
   Footer {
   Height: auto;
@@ -185,5 +190,42 @@ footer {
 }  
 
 @media only screen and (orientation: landscape) {
-  width: 80%;
+  width: inherit;
 }
+}
+
+@media only screen and (max-width: 600px) {
+  .page-heading {
+      width: auto;    
+      left: 20%;
+     font-size: xx-large;
+  }
+
+.container {
+      height: 68%;
+    width: 45%;  }
+
+.start-btn, .next-btn {
+        margin: 30% 60% 50% 90%;
+}
+
+.btn {
+  font-size: 0.55em;
+}
+
+#question-image {
+  height: 5em;
+}
+}
+
+@media only screen and (max-width: 450px) {
+#question {
+  font-size: 1.3rem;
+}
+
+#question-image {
+  height: 5em;
+}
+
+}
+
