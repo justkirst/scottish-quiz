@@ -226,6 +226,7 @@ footer {
 
 .btn {
   font-size: 0.55em;
+  width:fit-content;
 }
 
 #question-image {
