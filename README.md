@@ -21,6 +21,14 @@ The Scottish Quiz game is a fun way for people to test their knowledge on fun Sc
 
 ## Screenshots
 
+![Homepage](assets/docs/screenshots/homepage.png)
+![Landmark Start button page](assets/docs/screenshots/landmarks-start-page.png)
+![Landmark Example Question page](assets/docs/screenshots/landmarks-question-page.png)
+![Scottish Slang Example Question page](assets/docs/screenshots/slang-question-page.png)
+![Scottish General Knowledge Example Question page](assets/docs/screenshots/genknowledge-question-page.png)
+![Scottish Culture Example Question page](assets/docs/screenshots/culture-question-page.png)
+![Scottish Media Example Question page](assets/docs/screenshots/media-question-page.png)
+
 ## Testing
 
 ### Manual Testing
@@ -29,9 +37,9 @@ During the build of the repository, I manually checked the website throughout on
 
 During the build, I found one major bug in the project. 
 
-- **Bug**
-- **Test**
-- **Result**
+- **Bug** The images on the [landmark JS file](assets/js/landmarks.js) were not loading correctly.
+- **Test** During testing of this issue, I found that it was because of the image filepath. The **img src** path was the problem.
+- **Result** To solve this, I changed the filepath to **img:**.
 
 ### Post Deployment Testing
 
@@ -53,14 +61,13 @@ The live site via the following URL - [Scottish Quiz](https://justkirst.github.i
 
 ## Credits
 
-## Screenshots
+* All content on the website was written by myself
+* Fonts were sourced from [Google Fonts](https://fonts.google.com/)
+* Icons were sourced from [Font Awesome](https://fontawesome.com/icons)
+* The photos used were sourced from [Google Images](https://images.google.com/)
 
-![Homepage](assets/docs/screenshots/homepage.png)
-![Landmark Start button page](assets/docs/screenshots/landmarks-start-page.png)
-![Landmark Example Question page](assets/docs/screenshots/landmarks-question-page.png)
-![Scottish Slang Example Question page](assets/docs/screenshots/slang-question-page.png)
-![Scottish General Knowledge Example Question page](assets/docs/screenshots/genknowledge-question-page.png)
-![Scottish Culture Example Question page](assets/docs/screenshots/culture-question-page.png)
-![Scottish Media Example Question page](assets/docs/screenshots/media-question-page.png)
+I also want to thank my menotr Richard for his support and advice during this projcet.
 
 ## References
+
+I used [Coding Ninjas tutoria](https://www.codingninjas.com/blog/2021/08/02/how-to-create-a-quiz-app-using-javascript/) for reference on how to create a JavaScript quiz.
