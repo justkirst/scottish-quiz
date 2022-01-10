@@ -41,6 +41,10 @@ During the build, I found one major bug in the project.
 - **Test** During testing of this issue, I found that it was because of the image filepath. The **img src** path was the problem.
 - **Result** To solve this, I changed the filepath to **img:**.
 
+#### Unfixed Bugs
+
+The images filepath, although changed to a relative path, still doesn't populate correctly on mobile devices. I have tested this via Google Incognito mode and the images populate correctly.
+
 ### Post Deployment Testing
 
 After developing the website, I used validation tools to highlight any performance issues. 
