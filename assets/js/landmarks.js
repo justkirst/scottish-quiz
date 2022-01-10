@@ -90,7 +90,7 @@ const questions = [
 			{text: 'Ivy the Terrible', correct: false},
             {text: 'Calamity James', correct: false},
         ],
-        img: '/assets/images/desperate-dan.jpeg',   
+        img: 'assets/images/desperate-dan.jpeg',   
             },
     
 
@@ -103,7 +103,7 @@ const questions = [
             {text: 'Falkirk Wheel', correct: true},
 
         ],
-        img: '/assets/images/falkirk-wheel.jpeg',
+        img: 'assets/images/falkirk-wheel.jpeg',
     },
 
     {
@@ -114,7 +114,7 @@ const questions = [
            {text: 'Archie', correct: false},
         {text: 'Whisky', correct: false},
         ],
-        img: '/assets/images/greyfriars-bobby.jpeg',    
+        img: 'assets/images/greyfriars-bobby.jpeg',    
     },
 
     {
@@ -125,7 +125,7 @@ const questions = [
             {text: 'Glenfinnan Viaduct', correct: true},
             {text: 'Cairngorm Mountain Railway', correct: false},
         ],
-        img: '/assets/images/glennfinnan-viaduct.jpeg',  
+        img: 'assets/images/glennfinnan-viaduct.jpeg',  
     },
 
     {
@@ -136,7 +136,7 @@ const questions = [
             {text: 'Eilean Donan Castle', correct: false},
             {text: 'Glamis Castle', correct: false},
         ],
-        img: '/assets/images/edinburgh-castle.jpeg',  
+        img: 'assets/images/edinburgh-castle.jpeg',  
     },
 
     {
@@ -147,6 +147,6 @@ const questions = [
             {text: 'The Kelpies', correct: true},
             {text: 'The Horses of Helios', correct: false},
         ],
-        img: '/assets/images/kelpies.jpeg',       
+        img: 'assets/images/kelpies.jpeg',       
     },
 ];
