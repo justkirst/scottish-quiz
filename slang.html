@@ -16,35 +16,49 @@
     <title>Scottish Quiz</title>
 </head>
 <body>
+  <!--Quiz section Title information and styling-->
+  <header>
+    <h1 class="page-heading">Scottish Slang Quiz</h1>
+  </header>
 
-    <h1 class="page-heading">Scottish Slang</h1>
-
+  <!--Return to Homepage information-->
+  <section>
     <button class="btn">
         <a href="index.html" aria-label="Back to the homepage">Go back to the homepage</a>
       </button>
+    </section>
+  
+    <!--Question and answer styling section-->
+  <section>
 
-      <div class="container">
-        <div id="question-container" class="content hide">
-          <div id="question">Question</div>
-          <div id="answer-buttons" class="btn-grid">
-            <button class="btn">Answer 1</button>
-            <button class="btn">Answer 2</button>
-            <button class="btn">Answer 3</button>
-            <button class="btn">Answer 4</button>
-          </div>
-        </div>
-        <div class="controls">
-          <button id="next-btn" class="next-btn btn hide">Next</button>
-          <button id="start-btn" class="start-btn btn">Start</button>
-        </div>
+  <div class="container">
+    <div id="question-container" class="content hide">
+      <div id="question">Question</div>
+      <div id="answer-buttons" class="btn-grid">
+        <button class="btn">Answer 1</button>
+        <button class="btn">Answer 2</button>
+        <button class="btn">Answer 3</button>
+        <button class="btn">Answer 4</button>
       </div>
+    </div>
+    <div class="controls">
+      <button id="start-btn" class="start-btn btn">Start</button>
+      <button id="next-btn" class="next-btn btn hide">Next</button>
+    </div>
+  </div>
 
-      <footer>
+</section>
+
+<!--Footer information-->
+<footer>
         <a href="https://justkirst.github.io/scottish-quiz/" target="_blank" rel="noopener"
         aria-label="Visit the GitHub repository for this project (opens in a new tab)"><i class="fab fa-github"></i></a>
     </footer>
 
+    <!--JavaScript file pages-->
+    <section>
     <script src="assets/js/slang.js"></script>
     <script src="assets/js/quiz.js"></script>
+    </section>
 </body>
 </html>
